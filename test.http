@@ -1,0 +1,36 @@
+POST http://localhost:8080/api/signup
+content-type: application/json
+
+{
+        "username": "turknakrubs",
+        "surname": "Puncharas",
+        "lastname": "Phosap",
+        "email": "puncharasx@gmail.com",
+        "password": "123456789",
+        "avatar": "wwww.google.com"
+}
+###
+POST http://localhost:8080/api/signin
+content-type: application/json
+
+{
+        "email": "puncharasx@gmail.com",
+        "password": "123456789"
+}
+
+###
+POST http://localhost:8080/api/tweet
+content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxMzA0NzZjOTA2ZjNlNWRlMzBiYTgyZCIsImlhdCI6MTYzMDU2MzU5MSwiZXhwIjoxNjMwNjQ5OTkxfQ.sreI3XGdlTs-kOQJb0U5sh31YpaA25JyGRnWqUpPFHI
+
+{
+        "text": "No DDDDDDD.",
+        "tags": ["something"]
+}
+
+###
+GET http://localhost:8080/api/tweet/
+
+
+###
+GET http://localhost:8080/api/tweet/6130476c906f3e5de30ba82d
